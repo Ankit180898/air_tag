@@ -6,7 +6,7 @@ import 'package:sensors_plus/sensors_plus.dart';
 class GyroscopeController extends GetxController {
   double _rotationX = 0.0;
   double _rotationY = 0.0;
-  RxDouble _rotationZ = 0.0.obs;
+  final RxDouble _rotationZ = 0.0.obs;
   double _distance = 0.0;
   final double _alpha = 0.1; // Low-pass filter coefficient
   double _lastAccelerationX = 0.0;
